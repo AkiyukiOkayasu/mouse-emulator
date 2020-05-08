@@ -1,0 +1,29 @@
+{
+    "title": "Mouse emulator",
+    "rules": [
+        {
+            "description": "ctrl+spaceでマウス左クリック",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                      "key_code": "spacebar",
+                      "modifiers": {
+                        "mandatory": [
+                          "control"
+                        ],
+                        "optional": [
+                          "caps_lock"
+                        ]
+                      }
+                    },
+                    "to": [
+                      {
+                        "pointing_button": "button1"                
+                      }
+                    ]
+                }
+            ]
+        }        
+    ]
+}
